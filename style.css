@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Dosis:wght@200&family=Fuggles&family=Inclusive+Sans&family=Lobster+Two&family=Montserrat:wght@100&family=Open+Sans:wght@300&family=Playfair+Display:wght@500&family=Roboto:wght@100&family=Work+Sans&family=Zeyada&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    overflow: hidden;
+}
+.navbar ul li:hover{
+    background-color: whitesmoke;
+}
+.navbar{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+
+.container-fluid{
+    background-color: #528598;
+}
+
+#logo{
+    width: 100px;
+}
+
+.navbar-brand{
+    width: 20%;
+}
+
+.navbar-nav{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+    position: relative;
+    font-size: 15px;
+}
+
+.navbar li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    background:#0f0e14;
+    width: 0;
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+    transition: 0.5s;
+    border-radius: 4px;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+.strong{
+    color: black;
+}
+
+
+
+/* body */
+.body{
+    height: 86vh;
+    background-image: url("homeb.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.heading{
+    background: rgba(0,0,0,0.2);
+    padding: 5px;
+    width: 100%;
+}
+
+.body{
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 4px 8px 1px black;  
+}
+
+.body h1{
+    font-size: 40px;
+}
+
+#text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;
+}
+
+#btn{
+    margin-top: 10px;
+    padding: 10px 20px 10px 20px;
+    background: transparent;
+    color: #ffffff;
+    text-transform: uppercase; 
+    border: 1px solid white;
+}
+
+#btn:hover {
+    background-color: #DE8F5F;
+}
+
+
+
+
+
+
+.section-heading h2{
+	color: black;
+	text-align:center;
+}
+.section-heading{
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    background-color: whitesmoke;
+}
+
+.services{
+	display:flex;
+    margin-top: 30px;
+    justify-content: space-around;
+	width:100%; 
+	text-align:center;
+    height: 70vh;
+}
+
+.card{
+	background:whitesmoke;
+	margin: 10px;
+	width:25%;
+	border-radius: 25px; 	
+	height: 320px;
+    padding-bottom: 20px;
+    box-shadow:  0 0 15px black;
+}
+.card img{
+	border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    height: 200px;
+    width: 100%;
+}
+
+.card p{
+	color:green;
+	font-size:28px;
+}
+
+.card p .arr-card{
+	color:blue;
+}
+
+.theme-btn button{
+	background-color:#005207;
+	width: 130px;
+    padding: 10px;
+    color: white;
+    font-size: 15px;
+	border-radius:20px;
+}
+
+.card .theme-btn a{
+	position: relative;
+	top:7px;
+	text-decoration:none;
+	font-size:20px;
+	color:#fff;
+}
+
+.services{
+    text-align: center;
+}
+/* body2 */
+#ccccarouselExampleControls .d-block{
+    height: 65vh;
+}
+.ccarousel-inner{
+    height: 70vh;
+}
+/* body3 */
+.iconmain{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(232, 227, 227);
+    margin-bottom: 10px;
+    box-shadow:  0 0 15px black;
+}
+.icon{
+    width: 30%;
+    text-align: center;
+}
+
+.fa-cart-shopping, .fa-headphones-simple, .fa-plane-departure{
+    font-size: 40px;
+    color: gray;
+}
+.icon .btn-primary{
+    border: transparent;
+    background: transparent;
+    color: black;
+
+}
+
+body{
+    overflow-x: hidden;
+}
+
+/* footer */
+#footerDiv{
+    display: flex;
+    justify-content: space-around;
+    background-color: #528598;
+    color: #ffffff;
+    align-items: center;
+    cursor:default;
+}
+
+.footerDiv{
+    width: 30%;
+}
+
+.footerDiv p{
+    font-size: 13.5px;
+}
+
+.footerDiv .foott{
+    list-style: none;
+    cursor: pointer;
+    font-size: 15px;
+    /* text-align: center; */
+}
+#fot{
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    text-align: center;
+}
+
+
+
+/* media query */
+@media (max-width:600px) {
+    .navbar ul li::after{
+        display: none;
+    }
+
+    .body{
+        height: 50vh;
+        background-image: url("homeb.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    #ccccarouselExampleControls .d-block{
+        height: 60vh;
+    }
+     .body{
+        width: 100%;
+        padding: 10px;
+        height: 50vh;
+    }
+    .services{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        height: auto;
+        padding: 10px;
+    }
+    .card p {
+        display: none;
+    }
+    .card{
+        width: 100%;
+        height: auto;
+    }
+    .card img{
+        width: 100%;
+        height: auto;
+    }
+    .card button{
+        margin-top: 20px;
+    }
+    .carousel-inner{
+        height: 300px;
+        padding: 10px;
+    }
+    .d-block{
+        height: 300px;
+    }
+    .iconmain{
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+    }
+    .icon{
+        width: 100%;
+        padding: 10px;
+    }
+    .icon h3{
+        display: none;
+    }
+    
+    #footerDiv{
+        display: flex;
+        height: 170px;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .footerDiv >.foott{
+        display: none;
+    }
+    .footerDiv > .whoare{
+        position: relative;
+        bottom: 0px;
+    }
+    .footerDiv h3{
+        text-decoration: underline;
+        cursor: pointer;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 20px;
+    } 
+}
+
+@media (max-width: 768px) and (min-width:601px) {
+    .navbar ul li::after{
+        display: none;
+    }
+    .services{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        height: auto;
+        padding: 10px;
+    }
+    .card{
+        width: 100%;
+        height: auto;
+    }
+    .card img{
+        width: 100%;
+        height: auto;
+    }
+    
+    .card button{
+        margin-top: 20px;
+    }
+    .footerDiv >.foott{
+        display: none;
+    }
+    .footerDiv > .whoare{
+        position: relative;
+        bottom: 0px;
+    }
+    .footerDiv h3{
+        text-decoration: underline;
+        cursor: pointer;
+        text-transform: uppercase;
+        font-weight: bold;
+        
+    } 
+}
+
+@media (max-width: 992px) and (min-width: 769px) {
+    .footerDiv >.foott{
+        text-align: justify;
+    }
+    .footerDiv h3{
+        cursor: pointer;
+        text-transform: uppercase;
+        font-weight: bold;
+    } 
+    .navbar ul li::after{
+        display: none;
+    }
+    .card{
+        width: 100%;
+        height: 300px;
+        margin-top: 20px;
+    }
+    .card img{
+        width: 100%;
+    }
+    .services{
+        height: 70vh;
+    }
+}
+
+@media (min-width: 1200px) {
+    #ccccarouselExampleControls .d-block{
+        height: 95vh;
+    }
+    #ccccarouselExampleControls{
+        height: 95vh;
+    }
+    .icon{
+        height: 20vh;
+        margin-top: 15px;
+    }
+}

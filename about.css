@@ -1,0 +1,145 @@
+#parents{
+    background-image: url('40.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50vh;
+    background-size: cover;
+}
+
+.parents{
+    background-color: whitesmoke;
+    height: 70px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.us{
+    color: blue;
+}
+
+.first{
+    width: 50%;
+    text-align: justify;
+    padding: 10px;
+}
+
+#carouselExampleControlss{
+    width: 50%;
+    /* margin-top: 14.89em; */
+}
+#carouselExampleControlss img{
+    height: 60vh;
+}
+
+.abt{
+    text-align: center;
+}
+
+.man{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    background-color: whitesmoke;
+}
+.name{
+    text-align: center;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    box-shadow: 0 0 15px black;
+    margin-top: 10px;
+}
+.cardd .card-img-top{
+    height: auto;
+    border-radius: 50%;
+    height: 200px;
+    width: 100%;
+}
+.cardd{
+    width: 15%;
+    border-top-right-radius: 100px;
+    border-top-left-radius: 100px;
+
+}
+
+
+.cardd-group{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.cardd .card-body{
+    text-align: center;
+}
+
+.cardd .card-title {
+    font-size: 15px;
+    text-align: center;
+}
+.cardd-group{
+    margin-bottom: 10px;
+}
+#emp{
+    height: 5px;
+    box-shadow: 0 0 15px black;
+}
+
+/* media Query */
+@media (max-width:600px) {
+    #carouselExampleControlss{
+        display: none;
+    }
+    .first{
+        width: 100%;
+    }
+    .man{
+        height: 35vh;
+    }
+    .cardd-group{
+        display: flex;
+        flex-direction: column;
+        background-color: whitesmoke;
+    }
+    .cardd{
+        width: 50%;
+        margin: auto;
+        margin-top: 10px;
+    }
+    .cardd .card-img-top{
+        height: auto;
+    }
+    .name{
+        height: 40px;
+    }
+    .name h2{
+        font-size: 19px;
+    }
+}
+
+/* tablet */
+@media (max-width: 768px) and (min-width:601px) {
+    .cardd-group{
+        height: auto;
+    }
+    .cardd .card-img-top{
+        height: auto;
+    }
+}
+
+@media (max-width: 992px) and (min-width: 769px) {
+    .cardd-group{
+        height: 70vh;
+    }
+    .cardd .card-img-top{
+        height: auto;
+    }
+    .cardd{
+        margin-top: 13vh;
+    }
+}
